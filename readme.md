@@ -1,6 +1,6 @@
 # Overview
 
-The directory contents were made for a project to control pumps and gas flow controllers for modulation spectroscopy studies. I worked remotely and did not have the opportunity to test this on real equipment, instead using virtual ports made by the socat program. 
+The directory contents were made for a project to control pumps and gas flow controllers for modulation spectroscopy studies. I worked remotely and did not have the opportunity to test this on real equipment, instead using virtual ports made by the socat program, but the scripts were otherwise tested. Because the application, in an academic lab, did not require high reliability and low time latency, it was feasible and ideal to make a solution in Python rather than a dedicated controls program like LabView. Where LabView has complicated solutions to the problem of spawning subprocesses due to its data flow paradigm, reading and writing from common files by parallel executing scripts with whatever the OS has for resource control was sufficient for the application. 
 
 # Usage
 1. Adjust the parameters for each instrument in the `user-inputs.yaml` file using a program like Notepad. Keep this open as it will enable you to change set points while the pumps are running.
