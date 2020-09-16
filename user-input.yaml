@@ -1,0 +1,75 @@
+hplc 1:
+  slave id: 1
+  offset: 10 #ml/min
+  amplitude: 1 #ml/min
+  period: 30 #s
+  phase: 90 #deg
+  setpoint resolution: 0.1 #s
+  pump time: 360 #s
+  shape: sine
+  type: hplc
+  port: /dev/pts/2
+  baud rate: 9600
+  address: A
+  units: ml/min
+
+hplc 2:
+  slave id: 2
+  offset: 10. #ml/min
+  amplitude: 1. #ml/min
+  period: 30 #s
+  phase: 0 #deg
+  setpoint resolution: .1 #s
+  pump time: 360 #s
+  shape: sine
+  type: hplc
+  port: /dev/pts/2
+  baud rate: 9600
+  address: null
+  units: ml/min
+
+mfc 1:
+  slave id: 3
+  offset: 10. #sccm
+  amplitude: 1. #sccm
+  period: 30 #s
+  phase: 0 #deg
+  setpoint resolution: .1 #s
+  pump time: 360 #s
+  shape: sine
+  type: mfc
+  address: A
+  port: /dev/pts/2
+  baud rate: 9600
+  address: A
+  units: sccm
+
+mfc 2:
+  slave id: 4
+  offset: 10. #sccm
+  amplitude: 1. #sccm
+  period: 30 #s
+  phase: 0 #deg
+  setpoint resolution: .1 #s
+  pump time: 360 #s
+  shape: sine
+  type: mfc
+  port: null
+  baud rate: 9600
+  address: B
+  units: sccm
+
+legato:
+  slave id: 5
+  offset: 10. #ul/min
+  amplitude: 1. #ul/min
+  period: 30 #s
+  phase: 0 #deg
+  setpoint resolution: .1 #s
+  pump time: 360 #s
+  shape: sine
+  type: legato
+  port: /dev/pts/2
+  baud rate: 9600
+  address: null
+  units: ul/min

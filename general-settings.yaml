@@ -1,0 +1,5 @@
+update frequency to setpoint resolution ratio: 10
+slave loop delay: 0.1 # s
+plot all periods: False
+plot refresh time: 1.0 # s
+number of slaves: 5
