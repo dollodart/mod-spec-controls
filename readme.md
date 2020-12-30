@@ -39,3 +39,7 @@ As reference in reading the communication files which are python binary (pickle)
 # Description of Science
 
 By controlling the phase, frequency, and shape of modulation of several sources of reactants, it can be possible to infer properties of catalysts and the reactions they catalyze by the spectroscopic response. Note that while atomic relaxation times are on the order of picoseconds, these bulk changes in fluid concentration can be order miliseconds to seconds and still show significant inertial effects, which is usually resulting in phase shift for first-order like systems. The assumption of an ideal mixed fluid which is in equilibrium with the catalyst surface is required.
+
+Catalyst systems should not be truly dynamic for the given modulation frequency. There is a sinusoidal fidelity (sinusoid input gives sinusoid output) if the modulation amplitude is small relative to the mean value, since the system will be linear for small enough perturbations. But this doesn't give mechanistic insight, since mechanism is informed precisely by non-linearities, in particular at limits of some species saturation. For quasi-equilibrium systems, the best data is obtained at steady-state, since the only thing you get for not being at steady-state is an unknown and varying gas composition over the catalyst. If you were to know the gas composition over the catalyst, then the rate would be the same as at a steady-state by the quasi-equilibrium principle.
+
+The cscripts file has programs for programming step-function changes for steady-state experiments.
